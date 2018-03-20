@@ -1,0 +1,26 @@
+.intro__wrapper {
+	max-width: 470px;
+}
+
+.intro__title {
+  max-width: 440px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  color: $white;
+  font-family: $font-family2;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 57px;
+  letter-spacing: 0.06em;
+}
+
+.intro__text {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  color: $gray;
+  line-height: 24px;
+}

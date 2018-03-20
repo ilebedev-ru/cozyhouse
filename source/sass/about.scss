@@ -1,0 +1,41 @@
+.about {
+	width: 100%;
+  padding-top: 90px;
+}
+
+.about__wrapper {
+	@include desktop-container;
+	padding-left: 573px;
+  padding-bottom: 90px;
+	background-image: url("../img/Pets.png");
+	background-repeat: no-repeat;
+	background-size: auto;
+  background-position: 170px 0;
+}
+
+.about__title {
+  max-width: 400px;
+
+	margin: 0;
+  margin-bottom: 20px;
+	padding: 0;
+	
+  color: $color2;
+	font-family: $font-family2;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+}
+
+.about__text {
+  max-width: 430px;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  color: #4c4c4c;
+  font-size: $fontsize;
+  line-height: 24px;
+}
