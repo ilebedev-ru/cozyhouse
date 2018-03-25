@@ -1,0 +1,59 @@
+.help {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.help__wrapper {
+  @include desktop-container;
+  text-align: center;
+}
+
+.help__title {
+  max-width: 380px;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0;
+  
+  color: $color2;
+  font-family: $font-family2;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+}
+
+.help__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.help__item {
+  width: 20%;
+  flex-shrink: 0;
+  margin-bottom: 30px;
+}
+
+.help__icon {
+  height: 84px;
+  fill: $color1;
+}
+
+.help__name {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-family2;
+  color: $color2;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+}
