@@ -1,7 +1,7 @@
 .friends {
   position: relative;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 65px;
   background-color: $backgroung-color2;
   text-align: center;
 }
@@ -14,7 +14,7 @@
   max-width: 430px;
 
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 65px;
   padding: 0;
   
   color: $color2;
@@ -28,6 +28,8 @@
 .friends__list {
   max-width: 910px;
   margin: 0 auto;
+  margin-bottom: 70px;
+
   padding: 0;
 
   list-style: none;
@@ -46,8 +48,13 @@
   }
 }
 
+.friends__img {
+  margin-bottom: 10px;
+}
+
 .friends__name {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 
   color: $color2;
@@ -70,5 +77,6 @@
 
 .friends__know {
   display: inline-block;
-  margin: 40px auto;
+  margin-bottom: 65px;
+  border: none;
 }

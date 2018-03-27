@@ -1,6 +1,6 @@
 .help {
   width: 100%;
-  padding-top: 30px;
+  padding-top: 65px;
 }
 
 .help__wrapper {
@@ -12,7 +12,7 @@
   max-width: 380px;
 
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 65px;
   padding: 0;
   
   color: $color2;
@@ -26,6 +26,7 @@
 .help__list {
   width: 100%;
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 
   list-style: none;
@@ -38,11 +39,12 @@
 .help__item {
   width: 20%;
   flex-shrink: 0;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .help__icon {
-  height: 84px;
+  margin-bottom: 15px;
+  height: 70px;
   fill: $color1;
 }
 

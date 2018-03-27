@@ -1,6 +1,6 @@
 .main-footer {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 70px;
   background-color: $backgroung-color3;
   background-image: 
     linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(5,5,6,0) 18%,rgba(8,8,9,0) 27%,rgba(15,14,16,0) 47%,rgba(25,23,27,0.97) 78%,rgba(27,25,29,0.97) 85%),
@@ -10,6 +10,7 @@
 
 .main-footer__wrapper {
   @include desktop-container;
+  padding-bottom: 65px;
 
   display: flex;
   justify-content: flex-start;
@@ -18,17 +19,21 @@
   background-repeat: 
     no-repeat;
   background-position: 100% 0;
-  background-size: auto 100%;
+  background-size: auto;
 }
 
 .main-footer__box {
-  width: 300px;
-  margin-right: 150px;
+  width: 350px;
+  margin-right: 100px;
   flex-shrink: 0;
   flex-grow: 0;
 }
 
 .main-footer__title {
+  padding: 0; 
+  margin: 0;
+  margin-bottom: 30px;
+
   color: #ffffff;
   font-family: $font-family2;
   font-weight: 400;
@@ -37,5 +42,38 @@
   letter-spacing: 0.06em;
 }
 
+.main-footer__text {
+  padding: 0;
+  padding-left: 62px;
+  margin: 0;
+  margin-bottom: 20px;
 
+  color: $color1;
+  font-family: $font-family3;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+
+  &--email {
+    background-image: url("../img/envelope.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--phone {
+    background-image: url("../img/telephone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--adress {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    background-image: url("../img/pin.svg");
+    background-repeat: no-repeat;
+    background-size: 36px;
+    line-height: 1.2;
+  }
+}
 

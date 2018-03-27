@@ -1,6 +1,6 @@
 .main-header {
   width: 100%;
-  min-height: 924px;
+  min-height: 934px;
 	margin: 0;
 	padding: 0;
   padding-top: 60px;
@@ -12,7 +12,9 @@
 	background-repeat: 
 		no-repeat,
 		repeat;
-	background-position: 100% 0;
+	background-position: 
+    100% 100%,
+    0 0;
 }
 
 .main-header__wrapper {
@@ -20,7 +22,7 @@
 }
 
 .main-header__menu {
-  margin-bottom: 237px;
+  margin-bottom: 233px;
   display: flex;
   justify-content: space-between;  
   align-items: center;
@@ -60,7 +62,7 @@
 }
 
 .main-header__item {
-  margin-left: 40px;
+  margin-left: 37px;
 }
 
 .main-header__link {
