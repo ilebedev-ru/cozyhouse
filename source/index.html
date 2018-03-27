@@ -20,16 +20,16 @@
           </div>
           <ul class="main-header__list">
             <li class="main-header__item">
-              <a class="main-header__link" href="">About the shelter</a>
+              <a class="main-header__link" href="#about">About the shelter</a>
             </li>
             <li class="main-header__item">
-              <a class="main-header__link" href="">Our pets</a>
+              <a class="main-header__link" href="#friends">Our pets</a>
             </li>
             <li class="main-header__item">
-              <a class="main-header__link" href="">To help the shelter</a>
+              <a class="main-header__link" href="#help">To help the shelter</a>
             </li>
             <li class="main-header__item">
-              <a class="main-header__link" href="">Contacts</a>
+              <a class="main-header__link" href="#donation">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -38,12 +38,13 @@
             <h2 class="intro__title">Not only people need a house</h2>
             <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitor  porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
           </div>
-          <a class="button intro__link" href="#">Make a friend</a>
+          <a class="button intro__link" href="#friends">Make a friend</a>
         </section>
       </div>
     </header>
     <main>
       <section class="about">
+        <a id="about"></a>
         <div class="about__wrapper">
           <h2 class="about__title">About the shelter “Cozy House”</h2>
           <p class="about__text">
@@ -55,6 +56,7 @@
         </div>
       </section>
       <section class="friends">
+        <a id="friends"></a>
         <div class="friends__wrapper">
           <h2 class="friends__title">Our friends who are looking for a house</h2>
           <ul class="friends__list">
@@ -63,7 +65,7 @@
                 <img src="img/Cat.jpg" alt="Katrine photo">
               </div>
               <h3 class="friends__name">Katrine</h3>
-              <button class="button friends__button">Learn More</button>
+              <button class="button friends__button friends__button--katrine">Learn More</button>
             </li>
 
             <li class="friends__item">
@@ -71,7 +73,7 @@
                 <img src="img/Dog.jpg" alt="Jennifer photo">
               </div>
               <h3 class="friends__name">Jennifer</h3>
-              <button class="button friends__button">Learn More</button>
+              <button class="button friends__button friends__button--jennifer">Learn More</button>
             </li>
 
             <li class="friends__item">
@@ -79,7 +81,7 @@
                 <img src="img/Dog2.jpg" alt="Woody photo">
               </div>
               <h3 class="friends__name">Woody</h3>
-              <button class="button friends__button">Learn More</button>
+              <button class="button friends__button friends__button--woody">Learn More</button>
             </li>
           </ul>
           <div class="slider">
@@ -92,8 +94,8 @@
             </div>
             <div class="slider__button slider__button--next">
               <span class="visually-hidden">Следующие</span>
-              <svg width="16" height="16" aria-labelledby="long-left-arrow">
-                <title id="long-left-arrow">Стрелка</title>
+              <svg width="16" height="16" aria-labelledby="long-right-arrow">
+                <title id="long-rigth-arrow">Стрелка</title>
                 <use xlink:href="#long-left-arrow"></use>
               </svg>
             </div>
@@ -102,6 +104,7 @@
         <a class="button friends__know" href="#">Get to know the rest</a>
       </section>
       <section class="help">
+        <a id="help"></a>
         <div class="help__wrapper">
           <h2 class="help__title">Than you can help our shelter</h2>
           <ul class="help__list">
@@ -172,6 +175,7 @@
         </div>
       </section>
       <section class="donation">
+        <a id="donation"></a>
         <div class="donation__wrapper">
           <h2 class="donation__title">In addition, you can make a donation</h2>
           <p class="donation__bank-name">Name of the bank / Type of bank account</p>
@@ -194,5 +198,34 @@
         </section>
       </div>   
     </footer>
+    <section class="friends-modal">
+      <button class="friends-modal__button"><span class="visually-hidden">Закрыть</span></button>
+      <h2 class="visually-hidden">Карточка друга</h2>
+      <div class="friends-modal__wrapper friends-modal__wrapper--jennifer">
+        <div class="friends-modal__img">
+          <img src="img/Dog-big.jpg" alt="Pooch + Labrador Jennifer">
+        </div>
+        <div class="friends-modal__descr">
+          <h3 class="friends-modal__name">Jennifer</h3>
+          <p class="friends-modal__breed">Pooch + Labrador</p>
+          <p class="friends-modal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+          <ul class="friends-modal__list">
+            <li class="friends-modal__item">
+              <p><span class="friends-modal__category">Age:</span> 2 months</p>
+            </li>
+            <li class="friends-modal__item">
+              <p><span class="friends-modal__category">Inoculations:</span> none</p>
+            </li>
+            <li class="friends-modal__item">
+              <p><span class="friends-modal__category">Diseases:</span> none</p>
+            </li>
+            <li class="friends-modal__item">
+              <p><span class="friends-modal__category">Parasites:</span> none</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

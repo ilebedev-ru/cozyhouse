@@ -1,0 +1,153 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.friends-modal {
+  display: none;
+  position: fixed;
+  top: 10vw;
+  left: 50%;
+
+  width: 970px;
+  margin: 0 auto;
+  margin-left: -485px;
+
+  background-color: $backgroung-color1;
+  box-shadow: 0px 2px 35px 14px rgba(0,0,0,0.04);
+  border-radius: 5px;
+  z-index: 1;
+
+  &--open {
+    display: block;
+    animation: opacity 0.4s 1 linear;
+  }
+}
+
+.friends-modal__button {
+  position: absolute;
+  top: -50px;
+  right: -80px;
+  width: 48px;
+  height: 48px;
+  margin-right: 23px;
+  margin-bottom: 15px;
+
+  background-color: $backgroung-color1;
+  border: 2px solid $color1;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    width: 20px;
+    height: 2px;
+    background-color: $black;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  &::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color1;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.friends-modal__wrapper {
+  width: 100%;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.friends-modal__descr {
+  padding-top: 60px;
+}
+
+.friends-modal__name {
+  padding: 0;
+  margin: 0;
+
+  color: $color2;
+  font-family: $font-family2;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+}
+
+.friends-modal__breed {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
+  color: $color2;
+  font-family: $font-family2;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.06em;
+}
+
+.friends-modal__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: $font-family1;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.friends-modal__list {
+  padding: 0;
+  padding-left: 20px;
+  margin: 0;
+  color: $color1;
+}
+
+.friends-modal__item p {
+  margin: 0;
+  padding: 0;
+
+  color: $color2;
+  font-family: $font-family1;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 34px;
+  letter-spacing: 0.06em;
+}
+
+.friends-modal__category {
+  color: $color2;
+  font-family: $font-family2;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 34px;
+  letter-spacing: 0.06em;
+}
